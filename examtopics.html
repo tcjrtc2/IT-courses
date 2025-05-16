@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ExamTopics Online — IT Certification Question Banks</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pHU1yXx6N5iOiKQGgC4hYjT+Lk+Mp4cW9lMcf0fZ0tjF2jeW6e9H0ePjTgM06RZMz9w4KXyFj5nUbFiwK6o0Kw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* Reset & Base */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Poppins', sans-serif; background: #f5f7fa; color: #333; line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    .container { width: 90%; max-width: 1200px; margin: 0 auto; padding: 0 1rem; }
+
+    /* Navigation */
+    header { background: #1e2a78; color: #fff; padding: 1rem 0; }
+    .main-nav ul { display: flex; justify-content: center; flex-wrap: wrap; gap: 1.5rem; }
+    .main-nav a { font-weight: 600; transition: color 0.3s; }
+    .main-nav a:hover { color: #ff7f50; }
+
+    /* Hero */
+    header h1 { text-align: center; font-size: 2rem; margin-top: 0.5rem; }
+    .tagline { text-align: center; font-size: 1rem; margin-top: 0.25rem; color: #cbd1d8; }
+
+    /* Grid Layout */
+    main { padding: 2rem 0; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+    .card { background: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); padding: 1.5rem; transition: transform 0.3s; }
+    .card:hover { transform: translateY(-5px); }
+    .card h2 { font-size: 1.25rem; margin-bottom: 0.75rem; color: #1e2a78; display: flex; align-items: center; gap: 0.5rem; }
+    .card ul li { padding: 0.25rem 0; display: flex; align-items: center; }
+    .card ul li::before { content: "\f00c"; /* FontAwesome check */
+      font-family: "Font Awesome 6 Free"; font-weight: 900; color: #ff7f50; margin-right: 0.5rem; }
+
+    /* Footer */
+    footer { background: #1e2a78; color: #fff; padding: 1rem 0; }
+    .footer-nav ul { display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; }
+    .footer-nav a:hover { color: #ff7f50; }
+    footer p { text-align: center; margin-bottom: 0.5rem; font-size: 0.9rem; }
+
+    /* Responsive Typography & Layout */
+    @media (max-width: 768px) {
+      header h1 { font-size: 1.5rem; }
+      .tagline { font-size: 0.9rem; }
+      .main-nav ul { gap: 1rem; }
+      .card { padding: 1rem; }
+      .card h2 { font-size: 1.1rem; }
+    }
+    @media (max-width: 480px) {
+      header h1 { font-size: 1.25rem; }
+      .tagline { font-size: 0.8rem; }
+      .grid { gap: 0.75rem; }
+      .card { padding: 0.75rem; }
+      .card h2 { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header>
+    <div class="container">
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">My Question Banks</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+      <h1>IT Certification Exam Question Banks</h1>
+      <p class="tagline">All content presented in English</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="grid">
+      <!-- AWS Card -->
+      <div class="card" id="aws">
+        <h2><i class="fab fa-aws"></i> AWS Certifications</h2>
+        <ul>
+          <li>SAA-C03: Solutions Architect – Associate</li>
+          <li>SAP-C02: Solutions Architect – Professional</li>
+          <li>CLF-C02: Cloud Practitioner</li>
+          <li>DVA-C02: Developer – Associate</li>
+          <li>SOA-C02: SysOps Administrator – Associate</li>
+          <li>DOP-C02: DevOps Engineer – Professional</li>
+          <li>ANS-C01: Advanced Networking – Specialty</li>
+          <li>MLS-C01: Machine Learning – Specialty</li>
+          <li>SCS-C02: Security – Specialty</li>
+          <li>DEA-C01: Data Engineer – Associate</li>
+          <li>AIF-C01: AI Practitioner</li>
+          <li>MLA-C01: Machine Learning Engineer – Associate</li>
+        </ul>
+      </div>
+      <!-- ISC² Card -->
+      <div class="card" id="isc2">
+        <h2><i class="fas fa-user-shield"></i> ISC² Certifications</h2>
+        <ul>
+          <li>CCSP: Certified Cloud Security Professional</li>
+          <li>CISSP: Certified Information Systems Security Professional</li>
+          <li>CC: Certified in Cybersecurity</li>
+        </ul>
+      </div>
+      <!-- Google Cloud Card -->
+      <div class="card" id="gcp">
+        <h2><i class="fab fa-google"></i> Google Cloud Certifications</h2>
+        <ul>
+          <li>Professional Cloud Architect</li>
+          <li>Professional Cloud DevOps Engineer</li>
+          <li>Professional Cloud Network Engineer</li>
+          <li>Professional Cloud Security Engineer</li>
+          <li>Associate Cloud Engineer</li>
+          <li>Professional Machine Learning Engineer</li>
+          <li>Professional Cloud Database Engineer</li>
+          <li>Professional Cloud Developer</li>
+          <li>Professional Data Engineer</li>
+        </ul>
+      </div>
+      <!-- Scrum Card -->
+      <div class="card" id="scrum">
+        <h2><i class="fas fa-sync-alt"></i> Scrum Certifications</h2>
+        <ul>
+          <li>PSM I: Professional Scrum Master I</li>
+          <li>PSM II: Professional Scrum Master II</li>
+          <li>PSPO I: Professional Scrum Product Owner I</li>
+          <li>PSPO II: Professional Scrum Product Owner II</li>
+        </ul>
+      </div>
+      <!-- ISACA Card -->
+      <div class="card" id="isaca">
+        <h2><i class="fas fa-chart-line"></i> ISACA Certifications</h2>
+        <ul>
+          <li>CISA: Information Systems Auditor</li>
+          <li>CISM: Information Security Manager</li>
+          <li>CRISC: Risk & Information Systems Control</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 ExamTopics Online. All rights reserved.</p>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Certification Exams</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Platform Info</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
